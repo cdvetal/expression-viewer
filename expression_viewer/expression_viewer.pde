@@ -89,6 +89,12 @@ void keyPressed() {
   }
 }
 
+void keyReleased() {
+  if (key == 'e') {
+    launch(fileWithExpression.getPath());
+  }
+}
+
 void onResize() {
   treeShape.resetZoom();
 }
