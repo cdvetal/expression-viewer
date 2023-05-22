@@ -31,7 +31,7 @@ Repeat:
         If all images were created successfully:
             Create folder <b>gp_engine_images</b>
             For each generated image:
-                Save image in this folder with the filename <b>expression_id.png</b>
+                Save image in this folder with the filename <b>id.png</b>
             Set <b>feedback</b> text to "complete"
         Else:
             Set <b>feedback</b> text to information about the errors that occured
