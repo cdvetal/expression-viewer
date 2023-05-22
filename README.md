@@ -1,5 +1,7 @@
 # expression_viewer
- 
+
+_Introductory text and screenshot soon._
+
 ## Expression editing
 
 There are two methods for modifying the input expression:
