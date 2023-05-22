@@ -48,8 +48,8 @@ class NodeShape {
     float imageX = bounds.x + IMAGE_MARGIN;
     float imageY = bounds.y + IMAGE_MARGIN;
     float imageSize = bounds.w - IMAGE_MARGIN * 2;
-    if (node.getOutput() != null && node.getOutput().width > 0) {
-      pg.image(node.getOutput(), imageX, imageY, imageSize, imageSize);
+    if (node.getImage() != null && node.getImage().width > 0) {
+      pg.image(node.getImage(), imageX, imageY, imageSize, imageSize);
     } else {
       pg.noFill();
       pg.stroke(150);
@@ -390,7 +390,7 @@ class TreeShape {
 
   void useRandomImages() {
     for (Node n : tree.root.getSubtreeNodes()) {
-      n.output = createRandomImage(200, 200);
+      n.image = createRandomImage(200, 200);
     }
   }
 }

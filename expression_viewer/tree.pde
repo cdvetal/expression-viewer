@@ -5,7 +5,8 @@ class Node {
   String name;
   int depth;
   ArrayList<Node> inputs = new ArrayList<Node>();
-  PImage output = null;
+  PImage image = null;
+  String ticket = null;
   
   Node(Tree tree, String name, int depth, Node parent) {
     this.tree = tree;
@@ -24,11 +25,6 @@ class Node {
     "You can not add inputs to a node that stores a number";
     inputs.add(input);
     input.parent = this;
-  }
-
-  PImage getOutput() {
-    // Get the output of this node.
-    return output;
   }
 
   boolean isFunction() {
@@ -54,6 +50,11 @@ class Node {
   int getNumInputs() {
     // Get number of inputs.
     return inputs.size();
+  }
+  
+  PImage getImage() {
+    // Get the output image of this node.
+    return image;
   }
 
   ArrayList<Node> getSubtreeNodes() {
