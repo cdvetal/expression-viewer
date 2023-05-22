@@ -25,17 +25,18 @@ Repeat:
         Read path <b>gp_engine_feedback</b> from this file
         Read list of expressions (and each corresponding id) from this file
         If folder <b>gp_engine_images</b> exists:
-            Delete this folder and contents
+            Remove contents of this folder
+        Else:
+            Create this folder
+        Create empty list <b>errors</b>
         For each expression:
             Generate image with size <b>image_size</b>
-        If all images were created successfully:
+            If image was created successfully:
+                Save image in folder <b>gp_engine_images</b> with the filename <b><i>id</i>.png</b>
+            Else:
+                Add to list <b>errors</b> one text line describing the error that occured        
             Create folder <b>gp_engine_images</b>
-            For each generated image:
-                Save image in this folder with the filename <b>id.png</b>
-            Set <b>feedback</b> text to "complete"
-        Else:
-            Set <b>feedback</b> text to information about the errors that occured
-        Create file <b>gp_engine_feedback</b> containing the <b>feedback</b> text
+        Create file <b>gp_engine_feedback</b> containing the list <b>errors</b>
         Delete file <b>gp_engine_order</b>
 </pre>
 
