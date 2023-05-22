@@ -1,4 +1,4 @@
-# expression_viewer
+# Expression Viewer
 
 _Introductory text and screenshot soon._
 
