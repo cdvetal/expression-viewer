@@ -41,3 +41,7 @@ Repeat:
 </pre>
 
 The file `gp_engine_order` is located by default inside the folder `expression_viewer/data/`. However, this can be changed in the variable `fileWithGPEngineOrder` in the visualiser code.
+
+## Interaction
+
+- Press key `e` to see or edit the input expression using the default external editor
