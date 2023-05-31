@@ -31,10 +31,10 @@ void setup() {
     fileWithExpression = new File(dataPath("expression.txt"));
   }
   if (fileWithGPEngineOrder == null) {
-    fileWithGPEngineOrder = new File(dataPath("gp_engine_order"));
+    fileWithGPEngineOrder = new File(dataPath("gp_engine_order.txt"));
   }
   if (fileWithGPEngineFeedback == null) {
-    fileWithGPEngineFeedback = new File(dataPath("gp_engine_feedback"));
+    fileWithGPEngineFeedback = new File(dataPath("gp_engine_feedback.txt"));
   }
   if (folderWithGPEngineImages == null) {
     folderWithGPEngineImages = new File(dataPath("gp_engine_images"));
