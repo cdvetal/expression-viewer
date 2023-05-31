@@ -19,7 +19,7 @@ This integration requires the GP engine to:
 
 <pre>
 Repeat:
-    If file <b>gp_engine_order</b> exists:
+    If file <b>gp_engine_order.txt</b> exists:
         Read value <b>image_size</b> from this file
         Read path <b>gp_engine_images</b> from this file
         Read path <b>gp_engine_feedback</b> from this file
@@ -36,11 +36,11 @@ Repeat:
             Else:
                 Add to list <b>errors</b> one text line describing the error that occured        
             Create folder <b>gp_engine_images</b>
-        Create file <b>gp_engine_feedback</b> containing the list <b>errors</b>
-        Delete file <b>gp_engine_order</b>
+        Create file <b>gp_engine_feedback.txt</b> containing the list <b>errors</b>
+        Delete file <b>gp_engine_order.txt</b>
 </pre>
 
-The file `gp_engine_order` is located by default inside the folder `expression_viewer/data/`. However, this can be changed in the variable `fileWithGPEngineOrder` in the visualiser code.
+The file `gp_engine_order.txt` is located by default inside the folder `expression_viewer/data/`. However, this can be changed in the variable `fileWithGPEngineOrder` in the visualiser code.
 
 ## Interaction
 
